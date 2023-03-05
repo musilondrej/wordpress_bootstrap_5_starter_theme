@@ -1,0 +1,16 @@
+.post-thumbnail {
+    img {
+        max-height: 50vh;
+        object-fit: cover;
+        border-radius: $border-radius;
+    }
+}
+
+.single {
+    article {
+        @include bp('lg') {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+    }
+}

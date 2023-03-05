@@ -1,0 +1,24 @@
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+textarea {
+    @extend .form-control;
+}
+
+select {
+    @extend .form-select;
+}
+
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button {
+    @extend .btn;
+    @extend .btn-primary;
+}
+
+label {
+    @extend .form-label;
+}

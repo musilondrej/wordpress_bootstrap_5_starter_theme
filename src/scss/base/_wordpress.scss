@@ -1,0 +1,24 @@
+.sub-menu {
+    @extend .dropdown-menu;
+
+    .nav-link {
+        @extend .dropdown-item;
+    }
+    
+    .sub-menu {
+        @extend .dropdown-menu;
+        left: 100%;
+        top: 0;
+        
+    }
+}
+
+.menu-item-has-children {
+    position: relative;
+
+    &:hover {
+        > .sub-menu {
+            display: block;
+        }
+    }
+}
